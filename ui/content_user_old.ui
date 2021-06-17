@@ -1,0 +1,1800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frm_content</class>
+ <widget class="QFrame" name="frm_content">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>682</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>682</width>
+    <height>561</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Usuário</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame#frm_content{
+	background-color:#F5F5F5;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="vrl_frm_content_user">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frm_content_user">
+     <property name="minimumSize">
+      <size>
+       <width>682</width>
+       <height>561</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="vrl_content_user">
+      <item>
+       <spacer name="vls_between_border_and_button_actions_user">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QFrame" name="frm_user_actions_button">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <layout class="QHBoxLayout" name="hzl_botoes">
+         <property name="topMargin">
+          <number>6</number>
+         </property>
+         <item>
+          <spacer name="hls_between_border_and_navigation_user">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_navigation_first">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Primeiro Registro</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão para ir ao primeiro registro&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_navigation_first{
+	border-radius: 5px;
+}
+QPushButton#btn_navigation_first:hover{
+	border: 1px solid rgba(33,33,33,.2);
+	background: rgba(33,33,33,.1);
+}
+QPushButton#btn_navigation_first:pressed {
+	border: 1px solid rgba(33,33,33,.5);
+	background: rgba(33,33,33,.2);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/nextAll.png</normaloff>../img/nextAll.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Ctrl+Alt+Left</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_navigation_previous">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Registro Anterior</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão para ir ao registro anterior&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_navigation_previous{
+	border-radius: 5px;
+}
+QPushButton#btn_navigation_previousr:hover{
+	border: 1px solid rgba(33,33,33,.2);
+	background: rgba(33,33,33,.1);
+}
+QPushButton#btn_navigation_previous:pressed {
+	border: 1px solid rgba(33,33,33,.5);
+	background: rgba(33,33,33,.2);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/next.png</normaloff>../img/next.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Ctrl+Left</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_navigation_next">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Próxima Registro</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão para ir ao próximo registro&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_navigation_next{
+	border-radius: 5px;
+}
+QPushButton#btn_navigation_next:hover{
+	border: 1px solid rgba(33,33,33,.2);
+	background: rgba(33,33,33,.1);
+}
+QPushButton#btn_navigation_next:pressed {
+	border: 1px solid rgba(33,33,33,.5);
+	background: rgba(33,33,33,.2);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/previous.png</normaloff>../img/previous.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Ctrl+Right</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_navigation_last">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Última Registro</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão para ir ao ultimo registro&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_navigation_last{
+	border-radius: 5px;
+}
+QPushButton#btn_navigation_last:hover{
+	border: 1px solid rgba(33,33,33,.2);
+	background: rgba(33,33,33,.1);
+}
+QPushButton#btn_navigation_last:pressed {
+	border: 1px solid rgba(33,33,33,.5);
+	background: rgba(33,33,33,.2);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/PreviousAll.png</normaloff>../img/PreviousAll.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Ctrl+Alt+Right</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="hls_between_middle_of_action_navigations_user">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_search_register">
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Pesquisar</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão para pesquisar os registros de empresa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_search_register{
+	border-radius: 5px;
+}
+QPushButton#btn_search_register:hover{
+	border: 1px solid rgba(33,33,33,.2);
+	background: rgba(33,33,33,.1);
+}
+QPushButton#btn_search_register:pressed {
+	border: 1px solid rgba(33,33,33,.5);
+	background: rgba(33,33,33,.2);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/edit_find_replace.png</normaloff>../img/edit_find_replace.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>F12</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_print">
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Imprimir</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão para imprimir registro de empresa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_print{
+	border-radius: 5px;
+}
+QPushButton#btn_print:hover{
+	border: 1px solid rgba(33,33,33,.2);
+	background: rgba(33,33,33,.1);
+}
+QPushButton#btn_print:pressed {
+	border: 1px solid rgba(33,33,33,.5);
+	background: rgba(33,33,33,.2);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/print.png</normaloff>../img/print.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Ctrl+P</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_copy">
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Duplicar</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão para duplicar registro&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_copy{
+	border-radius: 5px;
+}
+QPushButton#btn_copy:hover{
+	border: 1px solid rgba(33,33,33,.2);
+	background: rgba(33,33,33,.1);
+}
+QPushButton#btn_copy:pressed {
+	border: 1px solid rgba(33,33,33,.5);
+	background: rgba(33,33,33,.2);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/copy.png</normaloff>../img/copy.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="hls_between_middle_of_action_register_user">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_new">
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Novo</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão para cadastrar uma novo registro de empresa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_new{
+	background-color: #0080ff ;
+	color: #fff;
+	border-radius: 5px;
+}
+QPushButton#btn_new:hover{
+	background-color:  #0073e6;
+}
+QPushButton#btn_new:pressed {
+	background-color: #0059b3;
+}
+QPushButton#btn_new:disabled {
+	background-color:  #a6a6a6;
+	color: #6a6767;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/new.png</normaloff>../img/new.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Ctrl+N</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_save">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Salvar</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão para salvar o registro de empresa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_save {
+	background-color: #0080ff ;
+	color: #fff;
+	border-radius: 5px;
+}
+QPushButton#btn_save:hover{
+	background-color:  #0073e6;
+}
+QPushButton#btn_save:pressed {
+	background-color: #0059b3;
+}
+QPushButton#btn_save:disabled {
+	background-color:  #a6a6a6;
+	color: #6a6767;
+	border: 1px solid gray;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/save.png</normaloff>../img/save.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Ctrl+S</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_edit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Editar</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão para editar o registro de empresa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_edit{
+	background-color: #0080ff ;
+	color: #fff;
+	border-radius: 5px;
+}
+QPushButton#btn_edit:hover{
+	background-color:  #0073e6;
+}
+QPushButton#btn_edit:pressed {
+	background-color: #0059b3;
+}
+QPushButton#btn_edit:disabled {
+	background-color:  #a6a6a6;
+	color: #6a6767;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/edit.png</normaloff>../img/edit.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Ctrl+E</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_cancel">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Cancelar</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão para cancelar a operação&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_cancel{
+	background-color: #0080ff ;
+	color: #fff;
+	border-radius: 5px;
+}
+QPushButton#btn_cancel:hover{
+	background-color:  #0073e6;
+}
+QPushButton#btn_cancel:pressed {
+	background-color: #0059b3;
+}
+QPushButton#btn_cancel:disabled {
+	background-color:  #a6a6a6;
+	color: #6a6767;
+	border: 1px solid gray;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/cancel.png</normaloff>../img/cancel.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Ctrl+F</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_delete">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Deletar</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Botão de deletar o registro de empresa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_delete{
+	background-color: #0080ff ;
+	color: #fff;
+	border-radius: 5px;
+}
+QPushButton#btn_delete:hover{
+	background-color:  #0073e6;
+}
+QPushButton#btn_delete:pressed {
+	background-color: #0059b3;
+}
+QPushButton#btn_delete:disabled {
+	background-color:  #a6a6a6;
+	color: #6a6767;
+	border: 1px solid gray;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/delete.png</normaloff>../img/delete.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>36</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Ctrl+D</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="hls_between_button_action_and_border_user">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="vls_between_button_actions_and_fields_user">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QFrame" name="frm_content_fields_user">
+        <property name="minimumSize">
+         <size>
+          <width>601</width>
+          <height>461</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="grl_content_fields_user">
+         <item row="1" column="2">
+          <widget class="QFrame" name="frm_field_user_right">
+           <property name="minimumSize">
+            <size>
+             <width>318</width>
+             <height>215</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="vrl_field_user_right">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="lbl_email">
+              <property name="minimumSize">
+               <size>
+                <width>47</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>47</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+              </property>
+              <property name="text">
+               <string>E-mail</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_email">
+              <property name="minimumSize">
+               <size>
+                <width>281</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit#txt_email {
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}
+QLineEdit#txt_email:focus{
+	border: 2px solid rgba(81, 203, 238, 1);
+}
+QLineEdit#txt_email:disabled {
+	background-color:  #dcdcdc;
+	color: #6a6767;
+	border: 1px solid gray;
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lbl_telephone">
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>60</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+              </property>
+              <property name="text">
+               <string>Telefone</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_telephone">
+              <property name="minimumSize">
+               <size>
+                <width>281</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit#txt_telephone {
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}
+QLineEdit#txt_telephone:focus{
+	border: 2px solid rgba(81, 203, 238, 1);
+}
+QLineEdit#txt_telephone:disabled {
+	background-color:  #dcdcdc;
+	color: #6a6767;
+	border: 1px solid gray;
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lbl_password">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>70</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+              </property>
+              <property name="text">
+               <string>Senha</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_password">
+              <property name="minimumSize">
+               <size>
+                <width>281</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit#txt_password {
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}
+QLineEdit#txt_password:focus{
+	border: 2px solid rgba(81, 203, 238, 1);
+}
+QLineEdit#txt_password:disabled {
+	background-color:  #dcdcdc;
+	color: #6a6767;
+	border: 1px solid gray;
+}</string>
+              </property>
+              <property name="echoMode">
+               <enum>QLineEdit::Password</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lbl_date_expires_password">
+              <property name="minimumSize">
+               <size>
+                <width>130</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>130</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+              </property>
+              <property name="text">
+               <string>Data Expiração Senha</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_date_expires_password">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit#txt_date_expires_password{
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}
+QLineEdit#txt_date_expires_password:focus{
+	border: 2px solid rgba(81, 203, 238, 1);
+}
+QLineEdit#txt_date_expires_password:disabled {
+	background-color:  #dcdcdc;
+	color: #6a6767;
+	border: 1px solid gray;
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lbl_cbx_situation">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>70</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+              </property>
+              <property name="text">
+               <string>Situação</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cbx_situation">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QComboBox#cbx_situation {
+	background-color: #eeeeee;
+	color: #6a6767;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+QComboBox#cbx_situation:focus{
+	border: 2px solid rgba(81, 203, 238, 1);
+}
+QComboBox#cbx_situation:disabled {
+	background-color:  #dcdcdc;
+	color: #6a6767;
+	border: 1px solid gray;
+}
+QHeaderView::section QComboBox {
+    background-color: #585A5C;
+    color: #F0F0F0;
+	border-radius: 5px;
+}
+QComboBox::drop-down {
+	outline:0px;
+    border:0px;
+}
+QComboBox::down-arrow{
+	subcontrol-position: bottom center;
+    subcontrol-origin: margin;
+	background-color: gray ;
+	border-radius: 5px;
+	border: solid #eeeeee;
+	border-width:2px 3px 8px 3px;
+}
+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <spacer name="vls_between_button_and_border_bottom">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="lbl_avatar">
+           <property name="minimumSize">
+            <size>
+             <width>281</width>
+             <height>191</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>318</width>
+             <height>214</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel#lbl_avatar {
+	border-width: 2px; 
+	border-style: solid; 
+	border-color: #CACACA;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QFrame" name="frm_fields_user_left">
+           <property name="minimumSize">
+            <size>
+             <width>318</width>
+             <height>215</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="vrl_fields_user_left">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="lbl_name">
+              <property name="minimumSize">
+               <size>
+                <width>47</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>47</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+              </property>
+              <property name="text">
+               <string>Nome</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_name">
+              <property name="minimumSize">
+               <size>
+                <width>281</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit#txt_name {
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}
+QLineEdit#txt_name:focus{
+	border: 2px solid rgba(81, 203, 238, 1);
+}
+QLineEdit#txt_name:disabled {
+	background-color:  #dcdcdc;
+	color: #6a6767;
+	border: 1px solid gray;
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lbl_role">
+              <property name="minimumSize">
+               <size>
+                <width>47</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>47</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+              </property>
+              <property name="text">
+               <string>Cargo</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_role">
+              <property name="minimumSize">
+               <size>
+                <width>281</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit#txt_role{
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}
+QLineEdit#txt_role:focus{
+	border: 2px solid rgba(81, 203, 238, 1);
+}
+QLineEdit#txt_role:disabled {
+	background-color:  #dcdcdc;
+	color: #6a6767;
+	border: 1px solid gray;
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lbl_user">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>70</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+              </property>
+              <property name="text">
+               <string>Usuário</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_user">
+              <property name="minimumSize">
+               <size>
+                <width>281</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit#txt_user {
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}
+QLineEdit#txt_user:focus{
+	border: 2px solid rgba(81, 203, 238, 1);
+}
+QLineEdit#txt_user:disabled {
+	background-color:  #dcdcdc;
+	color: #6a6767;
+	border: 1px solid gray;
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lbl_re_type_password">
+              <property name="minimumSize">
+               <size>
+                <width>111</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>111</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+              </property>
+              <property name="text">
+               <string>Re-Digite a Senha </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_re_type_password">
+              <property name="minimumSize">
+               <size>
+                <width>281</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit#txt_re_type_password {
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}
+QLineEdit#txt_re_type_password:focus{
+	border: 2px solid rgba(81, 203, 238, 1);
+}
+QLineEdit#txt_re_type_password:disabled {
+	background-color:  #dcdcdc;
+	color: #6a6767;
+	border: 1px solid gray;
+}</string>
+              </property>
+              <property name="echoMode">
+               <enum>QLineEdit::Password</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lbl_type_user">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+              </property>
+              <property name="text">
+               <string>Tipo do Usuário</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cbx_type_user">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QComboBox#cbx_type_user {
+	background-color: #eeeeee;
+	color: #6a6767;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+QComboBox#cbx_type_user:focus{
+	border: 2px solid rgba(81, 203, 238, 1);
+}
+QComboBox#cbx_type_user:disabled {
+	background-color:  #dcdcdc;
+	color: #6a6767;
+	border: 1px solid gray;
+}
+QHeaderView::section QComboBox {
+    background-color: #585A5C;
+    color: #F0F0F0;
+	border-radius: 5px;
+}
+QComboBox::drop-down {
+	outline:0px;
+    border:0px;
+}
+QComboBox::down-arrow{
+	subcontrol-position: bottom center;
+    subcontrol-origin: margin;
+	background-color: gray ;
+	border-radius: 5px;
+	border: solid #eeeeee;
+	border-width:2px 3px 8px 3px;
+}
+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <spacer name="hls_between_fields_right_and_border_right">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0">
+          <spacer name="hls_between_border_and_fields_leth">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="2">
+          <widget class="QPushButton" name="btn_select_image_profile">
+           <property name="minimumSize">
+            <size>
+             <width>151</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>318</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btn_select_image_profile {
+	background-color: #B2AFAF;
+	color: white;
+	border-radius: 5px;
+}
+
+QPushButton#btn_select_image_profile:hover {
+	background-color:#9B9B9B;
+}
+
+QPushButton#btn_select_image_profile:pressed {
+	background-color:#888888;
+}</string>
+           </property>
+           <property name="text">
+            <string>Selecionar Imagem de Perfil</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <spacer name="vls_between_fields_and_photo_user">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>txt_name</tabstop>
+  <tabstop>txt_email</tabstop>
+  <tabstop>txt_role</tabstop>
+  <tabstop>txt_telephone</tabstop>
+  <tabstop>txt_user</tabstop>
+  <tabstop>txt_password</tabstop>
+  <tabstop>txt_re_type_password</tabstop>
+  <tabstop>txt_date_expires_password</tabstop>
+  <tabstop>cbx_type_user</tabstop>
+  <tabstop>cbx_situation</tabstop>
+  <tabstop>btn_select_image_profile</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frm_content</class>
+ <widget class="QFrame" name="frm_content">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>682</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>682</width>
+    <height>561</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Perfil</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame#frm_content{
+	background-color: white;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="vrl_frm_content_profile">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frm_content_profile">
+     <property name="minimumSize">
+      <size>
+       <width>682</width>
+       <height>561</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="grl_content_profile">
+      <item row="2" column="0">
+       <spacer name="hls_between_border_and_header_profile">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::MinimumExpanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>46</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="4" column="1">
+       <spacer name="vls_between_border_and_content_fields_profile">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="1">
+       <widget class="QTabWidget" name="tab_setting_user">
+        <property name="minimumSize">
+         <size>
+          <width>542</width>
+          <height>435</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>542</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTabWidget {
+	border: none;
+}
+
+QTabWidget QWidget{
+	background-color: #F5F5F5;
+}
+
+QTabBar::tab {
+	background-color:  #dcdcdc;
+    padding: 8 64 5 20;
+    color:  gray;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+}
+QTabBar::tab:hover {
+     background: #dcdcdc;
+}
+QTabBar::tab:selected {
+    background:  gray;
+    color: white;
+}</string>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <property name="documentMode">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="tab_information_user">
+         <attribute name="title">
+          <string>Informações Pessoais</string>
+         </attribute>
+         <widget class="QLabel" name="lbl_about">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>230</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+          </property>
+          <property name="text">
+           <string>Sobre</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="txt_role">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>140</y>
+            <width>281</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit#txt_role{
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="txt_about">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>250</y>
+            <width>281</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTextEdit#txt_about{
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbl_email">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>70</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+          </property>
+          <property name="text">
+           <string>E-mail</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbl_role">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>120</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+          </property>
+          <property name="text">
+           <string>Cargo</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="txt_telephone">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>190</y>
+            <width>281</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit#txt_telephone {
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbl_telephone">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>170</y>
+            <width>60</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+          </property>
+          <property name="text">
+           <string>Telefone</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="txt_name">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>40</y>
+            <width>281</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit#txt_name{
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbl_name">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>20</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+          </property>
+          <property name="text">
+           <string>Nome</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="txt_email">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>90</y>
+            <width>281</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit#txt_email {
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_save_profile">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>340</y>
+            <width>70</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>70</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btn_save_profile {
+	background-color: #2FB7F3;
+	color: white;
+	border-radius: 5px;
+}
+
+QPushButton#btn_save_profile:hover {
+	background-color:#009CE1;
+}
+
+QPushButton#btn_save_profile:pressed {
+	background-color:#0082BC;
+}</string>
+          </property>
+          <property name="text">
+           <string>Salve</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>10</width>
+            <height>10</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_change_avatar">
+         <attribute name="title">
+          <string>Alterar Avatar</string>
+         </attribute>
+         <widget class="QLabel" name="lbl_avatar">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>30</y>
+            <width>281</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel#lbl_avatar {
+	border-width: 2px; 
+	border-style: solid; 
+	border-color: #CACACA;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_select_image_profile">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>224</y>
+            <width>151</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btn_select_image_profile {
+	background-color: #B2AFAF;
+	color: white;
+	border-radius: 5px;
+}
+
+QPushButton#btn_select_image_profile:hover {
+	background-color:#9B9B9B;
+}
+
+QPushButton#btn_select_image_profile:pressed {
+	background-color:#888888;
+}</string>
+          </property>
+          <property name="text">
+           <string>Selecionar Imagem de Perfil</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_save_avatar">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>270</y>
+            <width>70</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>70</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btn_save_avatar {
+	background-color: #2FB7F3;
+	color: white;
+	border-radius: 5px;
+}
+
+QPushButton#btn_save_avatar:hover {
+	background-color:#009CE1;
+}
+
+QPushButton#btn_save_avatar:pressed {
+	background-color:#0082BC;
+}</string>
+          </property>
+          <property name="text">
+           <string>Salve</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>10</width>
+            <height>10</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_change_password">
+         <attribute name="title">
+          <string>Alterar Senha</string>
+         </attribute>
+         <widget class="QLineEdit" name="txt_current_password">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>40</y>
+            <width>281</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit#txt_current_password {
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbl_re_type_new_password">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>120</y>
+            <width>140</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+          </property>
+          <property name="text">
+           <string>Re-Digite a Nova Senha </string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="txt_re_type_new_password">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>140</y>
+            <width>281</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit#txt_re_type_new_password {
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbl_new_password">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>70</y>
+            <width>70</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+          </property>
+          <property name="text">
+           <string>Nova Senha </string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="txt_new_password">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>90</y>
+            <width>281</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit#txt_new_password {
+	background-color: white;
+	color: #8C8C8C;
+	border: 1px solid #AFAEAE;
+	border-radius: 5px;
+}</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbl_current_password">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>20</y>
+            <width>70</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #605D5D;
+}</string>
+          </property>
+          <property name="text">
+           <string>Senha Atual</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_save_password">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>180</y>
+            <width>70</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>70</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btn_save_password {
+	background-color: #2FB7F3;
+	color: white;
+	border-radius: 5px;
+}
+
+QPushButton#btn_save_password:hover {
+	background-color:#009CE1;
+}
+
+QPushButton#btn_save_password:pressed {
+	background-color:#0082BC;
+}</string>
+          </property>
+          <property name="text">
+           <string>Salve</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>10</width>
+            <height>10</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item row="1" column="1" rowspan="2">
+       <widget class="QFrame" name="frm_header_profile">
+        <property name="minimumSize">
+         <size>
+          <width>541</width>
+          <height>111</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>111</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="lbl_email_user">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>59</y>
+           <width>315</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>315</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>315</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel#lbl_email_user {
+	color: #605D5D;
+}</string>
+         </property>
+         <property name="text">
+          <string>jefferson_sadoski@hotmail.com</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lbl_type_user">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>80</y>
+           <width>315</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>315</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>315</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel#lbl_type_user {
+	color: #605D5D;
+}</string>
+         </property>
+         <property name="text">
+          <string>Administrador</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lbl_photo_profile">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>-2</y>
+           <width>111</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>111</width>
+           <height>111</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>111</width>
+           <height>111</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel#lbl_photo_profile {
+	background: transparent;
+	border-radius: 55px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../img/user.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="margin">
+          <number>3</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lbl_name_user">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>20</y>
+           <width>315</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>315</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>315</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel#lbl_name_user {
+	color: #605D5D;
+}</string>
+         </property>
+         <property name="text">
+          <string>Jefferson Apa. Sadoski</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <spacer name="hls_between_header_and_border_profile">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>56</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="0">
+       <spacer name="hls_between_border_content_field_profile">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>49</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="2">
+       <spacer name="hls_between_content_field_and_border_profile">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>53</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="1">
+       <spacer name="vsl_between_border_and_header_profile">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>100</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>tab_setting_user</tabstop>
+  <tabstop>txt_name</tabstop>
+  <tabstop>txt_email</tabstop>
+  <tabstop>txt_role</tabstop>
+  <tabstop>txt_telephone</tabstop>
+  <tabstop>txt_about</tabstop>
+  <tabstop>btn_select_image_profile</tabstop>
+  <tabstop>btn_save_avatar</tabstop>
+  <tabstop>txt_current_password</tabstop>
+  <tabstop>txt_new_password</tabstop>
+  <tabstop>txt_re_type_new_password</tabstop>
+  <tabstop>btn_save_password</tabstop>
+  <tabstop>btn_save_profile</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
